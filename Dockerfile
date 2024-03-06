@@ -17,7 +17,7 @@ COPY . .
 # Collect static files
 RUN python manage.py collectstatic --noinput
 
-EXPOSE 8080
+EXPOSE 8000
 
 # Start Gunicorn
-CMD ["gunicorn", "--bind", "0.0.0.0:8080", "shyraq.wsgi:application"]
+CMD ["gunicorn", "--bind", "0.0.0.0:8000", "shyraq.wsgi:application"]

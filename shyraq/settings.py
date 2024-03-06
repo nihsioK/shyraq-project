@@ -14,21 +14,21 @@ SECRET_KEY = 'django-insecure--o@ewxu8wu&ch_%bum9x0tsct$p&l)s_-2jofj-_qc=*!0cs!$
 # SECURITY WARNING: don't run with debug turned on in production!
 DEBUG = True
 
-ALLOWED_HOSTS = ['127.0.0.1', 'localhost'] # Allowed hosts for the Django application
+ALLOWED_HOSTS = ['127.0.0.1', 'localhost', 'shyraq-f3ed2817c33e.herokuapp.com'] # Allowed hosts for the Django application
 
 CORS_ALLOWED_ORIGINS = [
     "https://localhost:5173",
-    "https://localhost:8080",
+    "https://shyraq-f3ed2817c33e.herokuapp.com/",
 ] # Allowing specified CORS origins
 
 CSRF_ALLOWED_ORIGINS = [
     "https://localhost:5173",
-    "https://localhost:8080",
+    "https://shyraq-f3ed2817c33e.herokuapp.com/",
 ] # Allowing specified CSRF origins
 
 CSRF_TRUSTED_ORIGINS = [
     "https://localhost:5173",
-    "https://localhost:8080",
+    "https://shyraq-f3ed2817c33e.herokuapp.com/",
 ] # Specifying trusted CSRF origins
 
 CSRF_COOKIE_HTTPONLY = False  # Setting CSRF cookie to be accessible from JavaScript
